@@ -1,0 +1,9 @@
+.vscode
+Main/.envs
+Main/venv
+Main/**/__pycache__/*
+Main/**/__init__.py
+Main/**/__init__.pyc
+Main/**/migrations/*
+Main/**/__init__/*
+Main/**/db.sqlite3
