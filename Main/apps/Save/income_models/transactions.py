@@ -13,8 +13,7 @@ class Fixed_Cost(models.Model):
     class Meta:
         db_table = 'Fixed_Cost'
         verbose_name = 'Fixed Cost'
-        verbose_name_plural = 'Fixed Costs'
-        ordering = ['created_at']        
+        verbose_name_plural = 'Fixed Costs'      
 
 class Gain(models.Model):
     id = models.AutoField(primary_key=True, unique=True, verbose_name='ID Gain', db_column='IDGain')
@@ -30,7 +29,6 @@ class Gain(models.Model):
         db_table = 'Gain'
         verbose_name = 'Gain'
         verbose_name_plural = 'Gains'
-        ordering = ['created_at']
 
 class Loss(models.Model):
     id = models.AutoField(primary_key=True, unique=True, verbose_name='ID Loss', db_column='IDLoss')
@@ -46,7 +44,6 @@ class Loss(models.Model):
         db_table = 'Loss'
         verbose_name = 'Loss'
         verbose_name_plural = 'Losses'
-        ordering = ['created_at']
 
 class Economy(models.Model):
     id = models.AutoField(primary_key=True, unique=True, verbose_name='ID Economy', db_column='IDEconomy')
@@ -62,4 +59,3 @@ class Economy(models.Model):
         db_table = 'Economy'
         verbose_name = 'Economy'
         verbose_name_plural = 'Economies'
-        ordering = ['created_at']

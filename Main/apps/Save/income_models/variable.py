@@ -16,4 +16,3 @@ class Variable_Cost(models.Model):
         db_table = 'Variable_Cost'
         verbose_name = 'Variable Cost'
         verbose_name_plural = 'Variable Costs'
-        ordering = ['created_at']
