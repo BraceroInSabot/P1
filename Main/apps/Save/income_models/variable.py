@@ -6,7 +6,7 @@ class Variable_Cost(models.Model):
     value = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='Value', db_column='Value')
     variable_type = models.CharField(max_length=2, verbose_name='Type', db_column='Type')
     is_active = models.BooleanField(default=True, verbose_name='Is Active', db_column='IsActive')
-    id_transaction = models.ForeignKey('Transaction', on_delete=models.CASCADE, db_column='IDTransaction')
+    id_transaction = models.IntegerField(unique=False, null=False, default=0, verbose_name='ID Transaction', db_column='IDTransaction')
 
     def __str__(self):
         name = f"{self.name} ($ {self.value})"
