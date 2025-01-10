@@ -15,6 +15,9 @@ INSTALLED_APPS = [
 
     # Apps
     'apps.Save',
+
+    # Libs
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -99,3 +102,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Rest Framework (API)
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
